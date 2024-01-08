@@ -18,4 +18,6 @@ const port = process.env.PORT;
 
 app.get("/", (req, res) => res.status(200).send("Welcome to the Social API"));
 
+
+app.use("/dating/cards")
 app.listen(port, () => console.log(`listening on localhost:${port}`));
